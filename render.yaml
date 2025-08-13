@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: laravel-app
+    env: docker
+    repo: https://github.com/ReyMartin19/AllAboutCOC
+    branch: main
+    plan: free
+    region: oregon
+    dockerfilePath: Dockerfile
+    buildFilter:
+      paths:
+        - ./**
